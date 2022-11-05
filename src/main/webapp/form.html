@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="form_ok.jsp" method="post">
+<form action="form_ok.jsp" method="post" >
     <fieldset style='width: 200px;margin: 5px'>
         <legend>개인 정보 입력</legend>
         Name : <input type="text" name="username" placeholder="이름을 입력"><br>
@@ -58,10 +58,14 @@
         <option value="jasmine">자스민티</option>
     </optgroup>
 </select><br>
+    <input class="form-check-input" type="checkbox" id="gridCheck"  name="isCheck" value="1">
+    <label class="form-check-label" for="gridCheck">
+        Check me out<br>
+    </label>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 
-    <input type="submit" value="저장">
-    <input type="reset" value="취소">
 </form>
-
 </body>
 </html>
